@@ -1,4 +1,6 @@
 %h1= @recette.titre
 %p= @recette.description
 
-= link_to "RETOUR", root_path, class: "btn btn-default"
+= link_to "Retour", root_path, class: "btn btn-default"
+= link_to "Modifier", edit_recette_path, class: "btn btn-default"
+= link_to "Supprimer", recette_path, method: :delete, data: {confirm: "Êtes-vous sûr de vouloir supprimer définitivement votre recette ?"}, class: "btn btn-default" 
