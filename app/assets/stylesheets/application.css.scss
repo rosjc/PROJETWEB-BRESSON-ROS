@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
+/* On suit le guide d'utilisation fournit avec bootstrap-sass */
+@import "bootstrap-sprockets";
+@import "bootstrap";
