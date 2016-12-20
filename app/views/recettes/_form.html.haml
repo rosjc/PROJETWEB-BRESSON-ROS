@@ -1,0 +1,15 @@
+= simple_form_for @recette, html: { multipart: true } do |f|
+  - if @recette.errors.any?
+    #errors
+      %p
+        = @recette.errors.count
+        Prevented this recipe from saving
+      %ul
+        - @recette.errors.full_messages.each do |msg|
+          %li= msg
+
+  .panel-body
+    = f.input :titre, input_html: { class: 'form_control'}
+    = f.input :description, input_html: { class: 'form_control'}
+
+  = f.button :submit, class: "btn btn_primary"
