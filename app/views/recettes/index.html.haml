@@ -1,5 +1,11 @@
-- @recette.each do |recette|
-  = link_to recette do
-    = image_tag recette.image.url(:medium)
-  %h2= link_to recette.titre, recette
-// mise en place d'une boucle pour récapituler nos recettes
+- @recette.each_slice(3) do |recettes|
+	.row
+		- recettes.each do |recette|
+			.col-md-4
+				.recette
+					.image_wrapper
+						= link_to recette do
+							= image_tag recette.image.url(:medium)
+					%h2= link_to recette.titre, recette
+/* mise en place d'une boucle pour récapituler nos recettes */
+/* afin d'avoir une meilleure disposition listée 1-2-3 en colonne */

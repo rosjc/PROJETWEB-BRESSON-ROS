@@ -30,6 +30,8 @@ gem 'simple_form', '~> 3.3', '>= 3.3.1'
 gem 'paperclip', '~> 5.1'
 # installer bootstrap-sass
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+# installer cocoon
+gem 'cocoon', '~> 1.2', '>= 1.2.9'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
