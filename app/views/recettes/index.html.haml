@@ -1,3 +1,5 @@
 - @recette.each do |recette|
+  = link_to recette do
+    = image_tag recette.image.url(:medium)
   %h2= link_to recette.titre, recette
 // mise en place d'une boucle pour récapituler nos recettes

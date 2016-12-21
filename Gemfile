@@ -26,9 +26,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'haml', '~> 4.0', '>= 4.0.7'
 # installer simple_form pour les formulaires
 gem 'simple_form', '~> 3.3', '>= 3.3.1'
+# insérer des images à son siteweb
+gem 'paperclip', '~> 5.1'
 # installer bootstrap-sass
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
-
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

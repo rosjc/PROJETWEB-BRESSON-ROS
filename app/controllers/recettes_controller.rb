@@ -41,9 +41,8 @@ class RecettesController < ApplicationController
   private
 
   def recette_params
-    params.require(:recette).permit(:titre, :description)
+    params.require(:recette).permit(:titre, :description, :image)
   end
-
   def find_recette
     @recette = Recette.find(params[:id])
   end
