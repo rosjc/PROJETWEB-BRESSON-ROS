@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  etape: MyText
+  recette_id: 
+
+two:
+  etape: MyText
+  recette_id: 
