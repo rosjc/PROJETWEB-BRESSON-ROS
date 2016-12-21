@@ -1,4 +1,5 @@
 class Recette < ActiveRecord::Base
+  belongs_to :utilisateur 
   has_many :ingredients
   has_many :instructions
   accepts_nested_attributes_for :ingredients,
