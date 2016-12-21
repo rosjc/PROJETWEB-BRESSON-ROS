@@ -1,7 +1,30 @@
-= image_tag @recette.image.url(:medium, class:"recette_image")
-%h1= @recette.titre
-%p= @recette.description
+.main_content
+	#recette_top.row
+		.col-md-4
+			= image_tag @recette.image.url(:medium), class: "recette_image"
+		.col-md-8
+			#recette_info
+				%h1= @recette.titre
+				%p.description= @recette.description
+				%p
 
-= link_to "Retour", root_path, class: "btn btn-default"
-= link_to "Modifier", edit_recette_path, class: "btn btn-default"
-= link_to "Supprimer", recette_path, method: :delete, data: {confirm: "Êtes-vous sûr de vouloir supprimer définitivement votre recette ?"}, class: "btn btn-default"
+	.row
+		.col-md-6
+			#ingredients
+				%h2 Ingredients
+				%ul
+					- @recette.ingredients.each do |ingredient|
+						%li= ingredient.nom
+
+		.col-md-6
+			#instructions
+				%h2 Instructions
+				%ul
+					- @recette.instructions.each do |instruction|
+						%li= instruction.etape
+
+	.row
+		.col-md-12
+			= link_to "Retour", root_path, class: "btn btn-default"
+			= link_to "Editer", edit_recette_path, class: "btn btn-default"
+			= link_to "Supprimer", recette_path, method: :delete, data: {confirm: "Êtes-vous sûr de vouloir supprimer ?" }, class: "btn btn-default"

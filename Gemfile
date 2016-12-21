@@ -32,6 +32,8 @@ gem 'paperclip', '~> 5.1'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 # installer cocoon
 gem 'cocoon', '~> 1.2', '>= 1.2.9'
+# installer devise
+gem 'devise', '~> 4.2'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
